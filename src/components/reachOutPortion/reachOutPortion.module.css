@@ -1,0 +1,28 @@
+.headerPart {
+    background-image: url("../../assets/backgrounds/backgrounds/WaveLinesDesktop3.svg"), url("../../assets/backgrounds/backgrounds/WaveLinesDesktop4.svg"), url("../../assets/backgrounds/backgrounds/WaveLinesDesktop4.svg");
+    /* background-repeat: no-repeat; */
+    position: absolute;
+    min-height: 50%;
+    background-position: left top, right bottom;
+    animation-name: backgroundMove;
+    animation-duration: 3s 3s 3s;
+    animation-timing-function: ease-in-out, ease-in-out, ease-in-out;
+}
+
+.headerPart:hover {
+    animation-play-state: running;
+}
+
+@keyframes backgroundMove {
+    0% {
+        transform: translate(0) translate(0) translate(0);
+    }
+
+    50% {
+        transform: translate(-5px) translate(5px) translate(20px);
+    }
+
+    100% {
+        transform: translate(-10px) translate(-5px) translate(-15px);
+    }
+}

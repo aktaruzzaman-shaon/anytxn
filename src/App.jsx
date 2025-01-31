@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import ReachOutPortion from './components/reachOutPortion/reachOutPortion'
+import ReachOutPortion from './components/reachOutPortion/ReachOutPortion'
 
 function App() {
   const [count, setCount] = useState(0)
